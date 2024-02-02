@@ -1,0 +1,76 @@
+*{
+    background-color: darkgrey;
+}
+body{
+    background: url(https://th.bing.com/th/id/OIP.slNoiDKrnzjmgc4-XyiVZwHaFj?w=277&h=207&c=7&r=0&o=5&pid=1.7);
+    background-size: 68%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    /* position: relative; */
+}    
+.clock{
+    width: 15rem;
+    height: 15rem;
+    position: relative;
+    top: 35%;
+    left: 40%;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.clock-face{
+    width: 12rem;
+    height: 12rem;
+    top: 25px;
+    left: 25px;
+    border-radius: 50%;
+    background-color: rgb(135, 96, 103);
+    position: relative;
+}
+.hand{
+    width: 50%;
+    height: 2px;
+    margin: 0px;
+    position: absolute;
+    top: 50%;
+    background-color: rgb(63, 63, 131);
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+.sec-hand, .min-hand{
+    width: 46%;
+}
+.hour-hand{
+    width: 43%;
+}
+@media screen and (max-width: 700px){
+    body{
+         background-size: contain;
+         position: relative;
+    }
+    .clock{
+        width: 10rem;
+        height: 10rem;
+        position: absolute;
+        top: 40%;
+        left: 25%;
+        border-radius: 1px solid red;
+    }
+    .clock-face{
+        width: 8rem;
+        height: 8rem;
+        top: 17px;
+        left: 17px;
+        position: absolute;
+    }
+    .sec-hand, .min-hand{
+        width: 43%;
+    }
+    .hour-hand{
+        width: 40%;
+    }
+}
